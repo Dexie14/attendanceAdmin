@@ -8,7 +8,7 @@ const LeaveMgt = () => {
   return (
     <div>
       <section className="flex justify-between items-center mb-5">
-        <h3 className="text-grey font-extrabold text-2xl">Leave Management</h3>
+        <h3 className="text-grey font-extrabold sm:text-2xl text-lg">Leave Management</h3>
         <ExportComp />
       </section>
       <main className="border border-borderColor rounded-xl ">

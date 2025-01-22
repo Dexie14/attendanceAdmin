@@ -9,32 +9,44 @@ const AttendanceDetail = ({
     <div>
       <section className="text-grey">
         <aside className="flex items-center my-5 font-medium">
-          <div className="w-[45%]">
-            <p className="text-placeholderColor text-xs">Staff Id</p>
-            <p className="text-sm">{selectedRow?.staffId}</p>
+          <div className="w-[50%]">
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Staff Id
+            </p>
+            <p className="sm:text-sm text-xs">{selectedRow?.staffId}</p>
           </div>
           <div className="">
-            <p className="text-placeholderColor text-xs">Staff Name</p>
-            <p className="text-sm">{selectedRow?.staffName}</p>
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Staff Name
+            </p>
+            <p className="sm:text-sm text-xs">{selectedRow?.staffName}</p>
           </div>
         </aside>
         <aside className="flex items-center my-5 font-medium">
-          <div className="w-[45%]">
-            <p className="text-placeholderColor text-xs">Staff Email</p>
-            <p className="text-sm">Oliver@gmail.com</p>
+          <div className="w-[50%]">
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Staff Email
+            </p>
+            <p className="sm:text-sm text-xs">Oliver@gmail.com</p>
           </div>
           <div className="">
-            <p className="text-placeholderColor text-xs">Department</p>
-            <p className="text-sm">Human Resource Management</p>
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Department
+            </p>
+            <p className="sm:text-sm text-xs">Human Resource Management</p>
           </div>
         </aside>
         <aside className="flex items-center my-5 font-medium">
-          <div className="w-[45%]">
-            <p className="text-placeholderColor text-xs">Office Branch</p>
-            <p className="text-sm">Oliver@gmail.com</p>
+          <div className="w-[50%]">
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Office Branch
+            </p>
+            <p className="sm:text-sm text-xs">Oliver@gmail.com</p>
           </div>
           <div className="">
-            <p className="text-placeholderColor text-xs">Status</p>
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Status
+            </p>
             <p
               className={`${
                 selectedRow?.status === "Present"
@@ -42,7 +54,7 @@ const AttendanceDetail = ({
                   : selectedRow?.status === "Late"
                   ? " text-yellow "
                   : " text-lateText "
-              } text-sm `}
+              } sm:text-sm text-xs `}
             >
               {selectedRow?.status}
             </p>
@@ -50,8 +62,10 @@ const AttendanceDetail = ({
         </aside>
         <aside className=" my-5 font-medium">
           <div className="">
-            <p className="text-placeholderColor text-xs">Reason</p>
-            <p>{selectedRow?.Details}</p>
+            <p className="text-placeholderColor sm:text-xs text-[10px]">
+              Reason
+            </p>
+            <p className="sm:text-sm text-xs">{selectedRow?.Details}</p>
           </div>
         </aside>
       </section>

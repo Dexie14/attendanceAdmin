@@ -35,12 +35,12 @@ const Attendance = () => {
   ];
   return (
     <div>
-      <h3 className="text-grey font-extrabold text-2xl">Attendance</h3>
-      <section className="flex justify-between items-center my-5">
-        <div className="w-[25%]">
+      <h3 className="text-grey font-extrabold sm:text-2xl text-lg">Attendance</h3>
+      <section className="sm:flex justify-between items-center my-5 space-y-4 sm:space-y-0">
+        <div className="sm:w-[25%]">
           <SearchInputComp className="bg-transparent border border-borderColor h-[30px] w-full " />
         </div>
-        <div className="w-[43%] flex justify-between items-center">
+        <div className="sm:flex gap-3 sm:justify-between items-center space-y-4 sm:space-y-0">
           <DatePicker
             showIcon
             icon={<DateIcon />}
@@ -50,12 +50,14 @@ const Attendance = () => {
               if (date) setStartDate(date);
             }}
           />
-          <FilterSelect title="Filter" />
-          <ExportComp />
+          <div className="flex gap-4 items-center">
+            <FilterSelect title="Filter" />
+            <ExportComp />
+          </div>
         </div>
       </section>
       <section>
-        <div className="grid grid-cols-4 gap-4 mb-4">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 mb-4">
           {StatData?.map((item: StatCardProps) => {
             return <StatCard StatData={item} />;
           })}

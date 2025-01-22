@@ -50,7 +50,7 @@ const Pagination = ({
           disabled={currentPage === 1}
           className="text-black cursor-pointer bg-transparent border  hover:text-white border-borderColor rounded-[8px]"
         >
-          <PreviousArrow /> Previous
+          <PreviousArrow /> <span className="hidden sm:block"> Previous </span>
         </Button>
         <div className="flex items-center justify-center space-x-3">
           {getPaginationRange().map((page, index) =>
@@ -78,7 +78,7 @@ const Pagination = ({
           disabled={currentPage === totalPages}
           className="text-black cursor-pointer bg-transparent border hover:text-white border-borderColor rounded-[8px]"
         >
-          Next <NextArrow />
+          <span className="hidden sm:block"> Next</span> <NextArrow />
         </Button>
       </div>
     </section>

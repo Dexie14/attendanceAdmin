@@ -30,15 +30,15 @@ const StatData: StatCardProps[] = [
 const Dashboard = () => {
   return (
     <div>
-      <h3 className="text-grey font-extrabold text-2xl">Dashboard</h3>
-      <main className="flex justify-between my-4">
-        <section className="w-[70%] ">
-          <div className="grid grid-cols-4 gap-4 mb-4">
+      <h3 className="text-grey font-extrabold sm:text-2xl text-lg">Dashboard</h3>
+      <main className="lg:flex justify-between my-4">
+        <section className="lg:w-[70%] ">
+          <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 mb-4">
             {StatData?.map((item: StatCardProps) => {
               return <StatCard StatData={item} />;
             })}
           </div>
-          <aside className="grid grid-cols-2 gap-4">
+          <aside className="grid sm:grid-cols-2 gap-4">
             <div>
               <AttendanceChart />
             </div>
@@ -47,7 +47,7 @@ const Dashboard = () => {
             </div>
           </aside>
         </section>
-        <section className="w-[28%]">
+        <section className="lg:w-[28%] mt-4 lg:mt-0">
           <ActivityLog />
         </section>
       </main>

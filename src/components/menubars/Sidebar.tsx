@@ -10,6 +10,7 @@ import {
   SettingsIcon,
   StaffIcon,
 } from "@/assets/svgComp/SidebarIcon";
+import { useSidebarStore } from "@/store/SidebarStore";
 
 type SidebarItem = {
   name: string;
@@ -51,6 +52,7 @@ const sidebarItems: SidebarItem[] = [
 ];
 
 const Sidebar = () => {
+  const { closeSidebar } = useSidebarStore();
   const location = useLocation();
 
   return (
@@ -66,6 +68,7 @@ const Sidebar = () => {
             <div key={index}>
               <Link
                 to={item.link}
+                onClick={closeSidebar}
                 className={`flex items-center justify-between h-[45px] rounded-[4px] ${
                   isActive
                     ? " text-deepBlue bg-fadedBlue"

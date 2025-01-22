@@ -12,7 +12,7 @@ const DepartmentMgt = () => {
   return (
     <div>
       <section className="flex justify-between items-center mb-5">
-        <h3 className="text-grey font-extrabold text-2xl">
+        <h3 className="text-grey font-extrabold sm:text-2xl text-lg">
           Department Management
         </h3>
         <ButtonComp

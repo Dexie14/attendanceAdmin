@@ -15,7 +15,7 @@ const AddStaff = () => {
     <div>
       <UploadImage />
       <section className="my-3">
-        <div className="flex items-center justify-between">
+        <div className="sm:flex space-y-4 sm:space-y-0 items-center justify-between">
           <InputField
             label="First Name"
             name="firstName"
