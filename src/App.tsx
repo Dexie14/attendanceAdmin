@@ -8,6 +8,7 @@ import Attendance from "./pages/admin/attendance/Attendance";
 import Staff from "./pages/admin/staff/Staff";
 import LeaveMgt from "./pages/admin/leave/LeaveMgt";
 import DepartmentMgt from "./pages/admin/department/DepartmentMgt";
+import Settings from "./pages/admin/settings/Settings";
 
 function App() {
   return (
@@ -23,10 +24,7 @@ function App() {
             <Route path="staff" element={<Staff />} />
             <Route path="leave" element={<LeaveMgt />} />
             <Route path="department" element={<DepartmentMgt />} />
-            <Route
-              path="settings"
-              element={<div className="">hom settings</div>}
-            />
+            <Route path="settings" element={<Settings />} />
           </Route>
         </Route>
       </Routes>

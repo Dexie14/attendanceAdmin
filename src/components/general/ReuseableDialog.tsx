@@ -15,12 +15,12 @@ const ReusableDialog = ({
   onOpenChange,
   children,
   className = "",
-  // width = "50vw"
-}: ReusableDialogProps) => {
+}: // width
+ReusableDialogProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className={`!rounded-[20px] sm:px-9 px-4 overflow-y-scroll scrollbar-hidden max-h-[80vh] sm:w-[50vw] w-[90vw] ${className}`}
+        className={`!rounded-[20px] sm:px-7 px-4 overflow-y-scroll scrollbar-hidden max-h-[80vh]  sm:!w-[50vw] !w-[90vw] ${className}`}
         // style={{
         //   maxWidth: width,
         // }}
@@ -35,3 +35,5 @@ const ReusableDialog = ({
 };
 
 export default ReusableDialog;
+
+// sm:w-[60vw] w-[90vw]

@@ -32,6 +32,7 @@ const Staff = () => {
           title="Add Staff"
           open={addStaff}
           onOpenChange={setAddStaff}
+          className="max-w-xl"
         >
           <AddStaff />
         </ReusableDialog>

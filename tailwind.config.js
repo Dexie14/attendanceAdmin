@@ -31,6 +31,7 @@ export default {
         lateFade: "#FEF3F2",
         lateBorder: "#FECDCA",
         fadedWhite: "#FAFAFA",
+        fadedGrey: "#F9F9F9",
       },
       boxShadow: {
         tableShadow: "0px 1px 2px 0px #0A0D120D"
