@@ -13,7 +13,7 @@ const EditWorkHours = () => {
     <div>
       <main>
         <h3 className="text-xs font-semibold text-grey mb-2">Lateness Fees</h3>
-        <div className="sm:flex justify-between w-full items-center">
+        <div className="flex justify-between w-full items-center">
           <div className="w-[15%] ">
             <Select>
               <SelectTrigger className="text-grey rounded-[8px] w-full placeholder:text-placeholderColor  bg-transparent border border-borderColor h-[50px]">
